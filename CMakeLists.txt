@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 include_directories(./include)
 aux_source_directory(./src SRC_DIR)
 add_library(${PROJECT_NAME} SHARED ${SRC_DIR})
-target_link_libraries(${PROJECT_NAME} boost_system)
+target_link_libraries(${PROJECT_NAME} boost_system pthread)
 
 #add_custom_target(PROJECT_NAME SOURCES "./include/")
 
